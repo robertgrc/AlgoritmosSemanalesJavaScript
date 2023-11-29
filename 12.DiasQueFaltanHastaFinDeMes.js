@@ -1,5 +1,6 @@
 //* Dada una fecha indicar los dias que faltan hasta fin de mes
 
+const diasPorMes = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 //Dada una fecha (día, mes, año), indicar si es válida o no.
 function esFechaValida(dia, mes, ano) {
   // Verificar si el año es válido (entre un rango razonable)
@@ -9,7 +10,6 @@ function esFechaValida(dia, mes, ano) {
   if (mes < 1 || mes > 12) {
     return false;
   }
-  const diasPorMes = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
   // Verificar si el año es bisiesto y ajustar febrero
   if (esBisiesto(ano)) {
@@ -31,7 +31,6 @@ function esBisiesto(ano) {
 }
 
 function DiasRestantesDelMes(dia, mes, anio) {
-  const diasPorMes = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
   let diasRestantes = 0;
   if (esFechaValida(dia, mes, anio)) {
     // Verificar si el año es bisiesto y ajustar febrero
