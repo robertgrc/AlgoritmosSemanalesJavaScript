@@ -32,5 +32,3 @@ console.log(resultado); // Devuelve 'USB'
 //* cadena.split(' ') divide la cadena en un array de palabras utilizando el espacio como //separador.
 //* palabras.map(palabra => palabra.charAt(0)) crea un nuevo array con las primeras letras de cada palabra.
 //* letras.join('') une las letras en una cadena.
-
-//* c) Las palabras que comiencen con la letra ‘A’. Por ejemplo, si recibe 'Antes de ayer' debe devolver 'Antes ayer'
