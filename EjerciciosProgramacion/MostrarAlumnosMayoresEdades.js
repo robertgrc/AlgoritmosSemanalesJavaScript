@@ -48,7 +48,6 @@ let alumnos = [
   "huascar, 41, 1.70",
 ];
 
-let mayores = devuelveEdadAltura(alumnos);
 let resultado = devuelveEdadAltura(alumnos);
 console.log("Media de Edades:", resultado.mediaEdades);
 console.log("Media de Alturas:", resultado.mediaAlturas);
